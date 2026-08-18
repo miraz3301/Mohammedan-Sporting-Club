@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Player Dashboard | Mohammedan FC</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="home-page dashboard-body">
+        <div class="blur blur1"></div>
+        <div class="blur blur2"></div>
+
+        <div class="dashboard-wrapper">
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar glass-panel">
+                <div class="logo">
+                    <img src="image/logo.png" alt="MOHAMMEDAN Logo">
+                    <div class="logo-text">
+                        <h2>MOHAMMEDAN <br>FOOTBALL CLUB</h2>
+                        <span>Football Club Management System</span>
+                    </div>
+                </div>
+                <!-- nav goes here -->
+                <nav class="dash-nav">
+                    <a href="#" class="active" id="nav-overview">Overview</a>
+                    <a href="#">Performance</a>
+                    <a href="#">Medical Status</a>
+                    <a href="#" id="nav-edit">⚙️ Edit Profile</a>
+                    <a href="index.html" class="logout-btn">Logout</a>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <header class="dash-header">
+                    <div>
+                        <span class="role-badge">PLAYER PORTAL</span>
+                        <h1>Welcome, [Player Name]</h1>
+                    </div>
+                    <div class="user-profile">
+                        <span>Jersey #10</span>
+                    </div>
+                </header>
+
+                <div class="dash-grid">
+                    <!-- Profile & Physical Stats -->
+                    <div class="dash-card glass-panel profile-card">
+                        <h3>Physical Profile</h3>
+                        <ul class="info-list">
+                            <li><span>Position:</span> Forward</li>
+                            <li><span>Height:</span> 1.85 m</li>
+                            <li><span>Weight:</span> 78 kg</li>
+                            <li><span>Blood Group:</span> O+</li>
+                            <li><span>Status:</span> Fit</li>
+                        </ul>
+                    </div>
+
+                    <!-- Performance Stats -->
+                    <div class="dash-card glass-panel">
+                        <h3>Season Performance</h3>
+                        <div class="stat-grid">
+                            <div class="stat-box">
+                                <h4>Matches</h4>
+                                <h2>24</h2>
+                            </div>
+                            <div class="stat-box">
+                                <h4>Goals</h4>
+                                <h2>12</h2>
+                            </div>
+                            <div class="stat-box warning">
+                                <h4>Yellow Cards</h4>
+                                <h2>3</h2>
+                            </div>
+                            <div class="stat-box danger">
+                                <h4>Red Cards</h4>
+                                <h2>0</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medical History -->
+                    <div class="dash-card glass-panel col-span-2">
+                        <h3>Medical & Injury History</h3>
+                        <table class="dash-table">
+                            <tr>
+                                <th>Injury Type</th>
+                                <th>Date</th>
+                                <th>Recovery Date</th>
+                                <th>Dope Test</th>
+                            </tr>
+                            <tr>
+                                <td>Ankle Sprain</td>
+                                <td>12 May 2026</td>
+                                <td>26 May 2026</td>
+                                <td>Negative</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Edit Profile Section -->
+                    <div class="dash-card glass-panel col-span-2 edit-section" id="editSection" style="display: none;">
+                        <h3>Edit Profile & Settings</h3>
+                        <p class="text-muted">Update your contact information and security settings.</p>
+
+                        <form class="dashboard-form mt-15">
+                            <div class="form-row">
+                                <div class="dash-input-group">
+                                    <label>Email Address</label>
+                                    <input type="email" placeholder="Enter new email">
+                                </div>
+                                <div class="dash-input-group">
+                                    <label>Contact Number</label>
+                                    <input type="text" placeholder="Enter new phone number">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="dash-input-group">
+                                    <label>New Password</label>
+                                    <input type="password" placeholder="Leave blank to keep current">
+                                </div>
+                                <div class="dash-input-group">
+                                    <label>Confirm Password</label>
+                                    <input type="password" placeholder="Confirm new password">
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="submit-btn dash-submit">Save Changes</button>
+                                <button type="button" class="secondary-btn cancel-edit">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

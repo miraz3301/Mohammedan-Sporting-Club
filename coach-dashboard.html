@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coach Dashboard | Mohammedan FC</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="home-page dashboard-body">
+        <div class="blur blur1"></div>
+        <div class="blur blur2"></div>
+
+        <div class="dashboard-wrapper">
+            <aside class="sidebar glass-panel">
+                <div class="logo">
+                    <img src="image/logo.png" alt="MOHAMMEDAN Logo">
+                    <div class="logo-text">
+                        <h2>MOHAMMEDAN <br>FOOTBALL CLUB</h2>
+                        <span>Football Club Management System</span>
+                    </div>
+                </div>
+                <!-- nav goes here -->
+                <nav class="dash-nav">
+                    <a href="#" class="active" id="nav-overview">Overview</a>
+                    <a href="#">Squad Management</a>
+                    <a href="#">Training Schedule</a>
+                    <a href="#" id="nav-edit">⚙️ Edit Profile</a>
+                    <a href="index.html" class="logout-btn">Logout</a>
+                </nav>
+            </aside>
+
+            <main class="main-content">
+                <header class="dash-header">
+                    <div>
+                        <span class="role-badge">COACH PORTAL</span>
+                        <h1>Welcome, [Coach Name]</h1>
+                    </div>
+                </header>
+
+                <div class="dash-grid">
+                    <!-- Coach Info -->
+                    <div class="dash-card glass-panel">
+                        <h3>Coaching Profile</h3>
+                        <ul class="info-list">
+                            <li><span>Post:</span> Head Coach</li>
+                            <li><span>Experience:</span> 15 Years</li>
+                            <li><span>Success Rate:</span> 68.5%</li>
+                        </ul>
+                    </div>
+
+                    <!-- Upcoming Training -->
+                    <div class="dash-card glass-panel">
+                        <h3>Upcoming Training</h3>
+                        <div class="training-list">
+                            <div class="training-item">
+                                <div class="t-info">
+                                    <h4>Tactical Drills</h4>
+                                    <p>18 Aug 2026 | 08:00 AM</p>
+                                </div>
+                                <span class="t-place">Main Stadium</span>
+                            </div>
+                            <div class="training-item">
+                                <div class="t-info">
+                                    <h4>Fitness Session</h4>
+                                    <p>19 Aug 2026 | 04:00 PM</p>
+                                </div>
+                                <span class="t-place">Gymnasium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Squad Overview (Manages) -->
+                    <div class="dash-card glass-panel col-span-2">
+                        <h3>Managed Players</h3>
+                        <p class="text-muted">Currently managing 28 active players in the squad.</p>
+                        <button class="primary-btn mt-15">View Full Roster</button>
+                        <button class="secondary-btn mt-15">Update Advice</button>
+                    </div>
+
+                    <!-- Edit Profile Section -->
+                    <div class="dash-card glass-panel col-span-2 edit-section" id="editSection" style="display: none;">
+                        <h3>Edit Profile & Settings</h3>
+                        <p class="text-muted">Update your contact information and security settings.</p>
+
+                        <form class="dashboard-form mt-15">
+                            <div class="form-row">
+                                <div class="dash-input-group">
+                                    <label>Email Address</label>
+                                    <input type="email" placeholder="Enter new email">
+                                </div>
+                                <div class="dash-input-group">
+                                    <label>Contact Number</label>
+                                    <input type="text" placeholder="Enter new phone number">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="dash-input-group">
+                                    <label>New Password</label>
+                                    <input type="password" placeholder="Leave blank to keep current">
+                                </div>
+                                <div class="dash-input-group">
+                                    <label>Confirm Password</label>
+                                    <input type="password" placeholder="Confirm new password">
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="submit-btn dash-submit">Save Changes</button>
+                                <button type="button" class="secondary-btn cancel-edit">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
